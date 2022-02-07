@@ -1,0 +1,43 @@
+//  Link: https://www.codewithharry.com/videos/cpp-tutorials-in-hindi-36/
+
+Inheritance in C++ - Overview:
+
+What is Inheritance?
+    It is the property by which one class can inherit the attributes(class variables) and functions(methods) of another class.
+Through inheritance, the inheriting class can access the attributes and methods of the inherited class and this prevents repetetion of code and hence supports reusability. In Inheritance, the inherited class is called 'Base Class' while the inheriting class is called 'Derived Class'. There are different types of inheritance in C++.
+
+1. Reusability is a very important feature of OOPS.
+2. In C++ we reuse a class and add additional features to it.
+3. Reusing classes save us a lot from writing repetetive code and thus saves our time.
+4. Reusing already tested and debugged class will save a lot of effort of developing and debugging the same thng again.
+5. Inheritance is a part of Object Oriented Programming(like Abstraction and Encapsulation).
+
+Repetetion is a breach of DRY(Do not Repeat Yourself) principle and hence agasint OOPS and this is why we use Inheritance.
+
+
+Types of Inheritance in C++:
+
+1. Single Inheritance:
+    1 Base Class and 1 Derived Class.
+    For example:
+        Programmer inherits from Employee(Programmer extends Employee).
+
+2. Multiple Inheritance:
+    1 Base Class and more than 1 Derived Classes.
+    For example:
+        Programmer inherits from Assistant and Employee(Programmer extends Employee, Assistant).
+
+3. Hierarchical Inheritance:
+    1 Base Class and more than 1 Derived Classes.
+    For example:
+        Programmer and Manager inherits from Employee(Programmer extends Employee and Manager extends Employee).
+
+4. Multi Level Inheritance:
+    Multilevel inheritance is a type of inheritance in which one derived class is inherited from another derived class.
+    For example:
+        Cow inherits from Mammel, Mammel inherits from Animal(Mammel extends Animal and Cow extends Animal).
+
+5. Hybrid Inheritance: 
+    Hybrid Inheritance is a combination of Multiple Inheritance, Hierarchical Inheritance and Multi Level Inheritance.
+    For example:
+        D inherit from B and C, and B and C inherit from A(D extends B, C and B, C extends A).
