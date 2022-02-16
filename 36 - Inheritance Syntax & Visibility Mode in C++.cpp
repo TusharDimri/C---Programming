@@ -19,6 +19,7 @@ class Employee{
     public:
         int id;
         long salary;
+        Employee(){} // Default Constructor 
         Employee(int id, float salary){
             this->id = id;
             this->salary = salary;
@@ -26,7 +27,6 @@ class Employee{
         void display(){
             cout<<"ID: "<<this->id<<endl;
         }
-        Employee(){}
 };
 
 //  Derived Class(Inheriting Class): 
@@ -41,13 +41,13 @@ class Programmer: public Employee{
 };
 /*
 Visibility Mode:
-If Visibility Mode is public then the public members(attributrs and methods) of base class will be public members of inheriting class.
-If Visibility Mode is private then the public members (attributrs and methods) of base class will be private members of inheriting class.
+If Visibility Mode is public then the public members(attributes and methods) of base class will be public members of inheriting class.
+If Visibility Mode is private then the public members (attributes and methods) of base class will be private members of inheriting class.
 By default,the visibility mode is private.
 
 Note: 
 A class's private members are not inheritable.
-When we create a derived class's object the default constructor of the base class is called so we need a default constructor in base class.
+When we create a derived class object the default constructor of the base class is called so we need a default constructor in base class.
 */
 
 int main(){
