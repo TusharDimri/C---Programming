@@ -9,13 +9,14 @@ using namespace std;
 class A{
     int a;
     public:
-        void setData(int);
+        A & setData(int);
         void getData(void);
 };
 
-void A::setData(int a){
+A& A::setData(int a){
     // a = a // Garbage Value 
     this->a = a;
+    return *this;
 }
 
 void A::getData(){
@@ -24,7 +25,8 @@ void A::getData(){
 
 int main(){
     A obj;
-    obj.setData(32);
-    obj.getData();
+    // obj.setData(32);
+    // obj.getData();
+    obj.setData(32).getData();
     return 0;
 }
