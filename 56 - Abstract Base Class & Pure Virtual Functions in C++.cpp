@@ -1,11 +1,13 @@
-//  Link: https://www.codewithharry.com/videos/cpp-tutorials-in-hindi-57/
+//  Link: https://www.codewithharry.com/videos/cpp-tutorials-in-hindi-58/
 
 #include<iostream>
 #include<string.h>
 
 using namespace std;
 
-class CWH{
+// Abstract base class is a class that has at least one pure virtual function in its body. The classes which are inheriting the base class must need to override the virtual function of the abstract class otherwise compiler will throw an error.
+
+class CWH{  // This is an Abstract Base Class
     protected:
         string title;
         float rating;
@@ -15,9 +17,8 @@ class CWH{
             this->title = title;
             this->rating = rating;
         }
-        virtual void display(){ // Can also be written as: void virtual display
-            cout<<"Sad";
-        }
+       virtual void display()=0; // Pure Virtual Function / Do Nothing Function.
+        // This function of the Base Class should be overriden by the derived classes of the Abstract Base Class.
 };
 
 class CWHVideo: public CWH{
@@ -75,16 +76,6 @@ int main(){
     
     tuts[0]->display();
     tuts[1]->display();
-    // If we did'nt use Virtual Function in class CWH, thn by default, early binding would have taken place and the display function of class CWH would have been called.
-    // But we have used the “virtual” keyword with the “display” function of the base class to make is a virtual function so when the display function is called by using the base class pointer the display function of the derived class will run because the base class pointer is pointing to the derived class object.
 
     return 0;
 }
-/*
-Rules for virtual functions
-1. They cannot be static.
-2. They are accessed by object pointers.
-3. Virtual functions can be a friend of another class.
-4. A virtual function in the base class might not be used.
-5. If a virtual function is defined in a base class, there is no necessity of redefining it in the derived class.
-*/
