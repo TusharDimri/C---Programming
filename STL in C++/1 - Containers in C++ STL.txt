@@ -1,0 +1,20 @@
+//  Link: https://www.codewithharry.com/videos/cpp-tutorials-in-hindi-69/
+//  Link : https://www.codewithharry.com/videos/cpp-tutorials-in-hindi-70/
+
+/*
+STL on C++:
+1. Continaers: Object which stores data.
+2. Algorithm: Procedure to process data.
+3. Iterator: Object which points to an object of a container.
+
+Containers in C++:
+1. Sequence Containers - 
+    Linear Fashion. For Example: Vector, List, DeQueue.
+
+2. Associative Container -
+    Direct Access. For Exaplme: Map, Multimap, Set, Multiset, Dictionary.
+ 
+3. Derived Containers -
+    Derived from other containers and for real world modelling.
+    For Example: Set, Queue, Priority Queue.
+*/
